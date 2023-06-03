@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+
+        <link rel = "stylesheet" href = "tictactoe.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Glory:wght@600&family=Josefin+Sans:wght@600&family=Oswald:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+        
+    <body>
+        <div class = "title-parent-container">
+            <div class = "title-container">TIC-TAC-TOE</div>
+        </div>
+        <div class = "start-reset-container">
+                <button onclick = "isStarting()" class = "start-reset-button">START</button>
+            
+            <div>
+                <button onclick = "toggleReset()" class = "start-reset-button">RESET</button>
+                    <div class = "sub-reset-menu">
+                        <ul>
+                            <li onclick = "resetButton()">Reset Board</li>
+                            <li onclick = "resetScoreHis()">Reset Scoreboard & History</li>
+                            <li onclick = "resetAll()">Reset Board, Scoreboard & History</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class = "main-holder-container">
+
+            <div class = "score-board-container">
+                <div class = "score-container">
+                    <p>SCOREBOARD</p>
+                    <p class = "play1-score">Player 1 [X] :&nbsp; 0</p>
+                    <p class = "play2-score">Player 2 [O] :&nbsp; 0</p>
+                </div>
+
+            </div>
+
+            <div class = "main-container">
+
+                <div class = "row-container" id = "row-container1">
+
+                    <div class = "sub-container1">
+                            
+                    </div>
+                    
+                    <div class = "sub-container2">
+                        
+                    </div>
+                    
+                    <div class = "sub-container3">
+                            
+                    </div>
+                </div>
+
+                <div class = "row-container" id = "row-container1">
+
+                    <div class = "sub-container4">
+                        
+                    </div>
+                    
+                    <div class = "sub-container5">
+                        
+                    </div>
+                    
+                    <div class = "sub-container6">
+                        
+                    </div>
+                </div>
+
+                <div class = "row-container">
+
+                    <div class = "sub-container7">
+                        
+                    </div>
+                    
+                    <div class = "sub-container8">
+                        
+                    </div>
+                    
+                    <div class = "sub-container9">
+                        
+                    </div>  
+                </div>
+                
+            </div>
+
+            <div class = "history-container">
+                <div class = "history-title">
+                <p>WINNER'S HISTORY</p>
+                </div>
+                <div class = "history-list">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class = "result-container">
+            <div class = "winner-loser">
+            <p class = "result-shower"></p>
+            <p class = "reset-notif"></p>
+            </div>
+        </div>
+
+        <script src = "tictactoe.js"></script>
+    </body>
+</html>
